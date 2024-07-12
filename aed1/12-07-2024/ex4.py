@@ -1,3 +1,5 @@
+# Exercícios da aula 12/07/2024
+
 # 4. Leia a temperatura em graus Celsius e converta para Fahrenheit.
 
 c = float(input('Insira a temperatura em °C: '))
