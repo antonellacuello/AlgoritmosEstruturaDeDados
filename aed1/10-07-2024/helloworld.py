@@ -6,5 +6,5 @@ print(E);
 E = 'e agora?';
 print(type(E));
 print(E);
-nome = inpout('Digite seu nome: ');
+nome = input('Digite seu nome: ');
 print('Konnichiwa, ' + nome);
