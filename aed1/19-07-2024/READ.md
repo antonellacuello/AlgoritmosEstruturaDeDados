@@ -3,7 +3,7 @@
 ***Semana 03*** - **Condicionais**
 - **Exercício 1:**
   - *Leia um número e escreva seu absoluto*
- - **Exercício 2:**
+- **Exercício 2:**
   - *Peça para o usuário informar seu nome e a hora do dia. Escreva uma mensagem conforme a hora*
 - **Exercício 3:**
   - *Leia o ano que nasceu e escreva se o voto é facultativo ou obrigatório.*
