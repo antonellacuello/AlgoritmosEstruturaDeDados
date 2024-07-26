@@ -10,15 +10,15 @@
 - **Exercício 13:**
   - *Escreva um programa que mostre a tabuada (0 a 10) de um número fornecido pelo usuário.*
 - **Exercício 14:**
-  - *Escreva um programa que mostre a seguinte sequência de números para um valor N informado pelo usuário:
+  - *Escreva um programa que mostre a seguinte sequência de números para um valor N informado pelo usuário:*
 
-   1
-   2 2
-   3 3 3
-   4 4 4 4
-   5 5 5 5 5
+   1.
+   2 2.
+   3 3 3.
+   4 4 4 4.
+   5 5 5 5 5.
    …
-   N N N N N N N …*
+   N N N N N N N …
 - **Exercício 15:**
   - *Escreva um programa que calcule e mostre a soma dos números de 1 a N. Não utilize as equações de progressão aritmética.*
 - **Exercício 16:**
