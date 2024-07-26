@@ -1,6 +1,6 @@
 # AED1 - FURG 
 
-***Lista 2:*** - **Condicionais**
+***Lista 1:*** - **Condicionais**
 - **Exercício 1:**
   - *Faça um programa que, ao receber os valores da largura e do comprimento de uma figura geométrica, mostre se esta é um quadrado ou apenas um retângulo. Caso um valor seja menor ou igual a zero, deve-se mostrar um erro..*
 - **Exercício 2:**
