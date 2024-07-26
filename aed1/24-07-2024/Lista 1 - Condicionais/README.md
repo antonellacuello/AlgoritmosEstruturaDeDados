@@ -14,10 +14,10 @@
 - **Exercício 6:**
   - *Faça um programa em python que leia 3 números e os mostre em ordem crescente.*
 - **Exercício 7:**
-  - *Crie um programa em Pyhon que leia uma data (DD/MM/AAAA) e diga se a data é válida.
+  - *Crie um programa em Pyhon que leia uma data (DD/MM/AAAA) e diga se a data é válida.*
   - a) Desconsidere anos bissextos.
   - b) Considere anos bissextos*
 - **Exercício 8:**
-  - Faça um programa em python que leia o nome de 4 times de futebol que estão em uma semifinal. Após, leia os gols das duas partidas: time 1 x time 2 e time 3 x time 4. Os times vencedores devem ir para a final. Caso haja empate, deve-se perguntar ao usuário qual time se classificou. Por fim, deve-se ler os gols da final e mostrar qual time foi campeão (se empatar, perguntar quem foi campeão). O imposto de renda no Brasil segue as regras presentes na tabela seguinte:*
+  - *Faça um programa em python que leia o nome de 4 times de futebol que estão em uma semifinal. Após, leia os gols das duas partidas: time 1 x time 2 e time 3 x time 4. Os times vencedores devem ir para a final. Caso haja empate, deve-se perguntar ao usuário qual time se classificou. Por fim, deve-se ler os gols da final e mostrar qual time foi campeão (se empatar, perguntar quem foi campeão). O imposto de renda no Brasil segue as regras presentes na tabela seguinte:*
 - **Exercício 9:**
   - *O imposto de renda no Brasil segue as regras presentes na tabela seguinte: https://docs.google.com/document/u/0/d/1wSuywsxBeuD3A-4FePvR3VXEXcmTAXWieoYTsAXOkvM/mobilebasic?pli=1&usp=gmail. Crie um programa em Python que leia o rendimento mensal do usuário, qual o modelo de imposto (sem correção/com correção das perdas no governo Bolsonaro) e retorne o quanto ele deve pagar de imposto.*
