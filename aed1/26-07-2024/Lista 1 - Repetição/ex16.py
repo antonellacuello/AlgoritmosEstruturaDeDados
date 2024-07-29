@@ -1,4 +1,4 @@
-#15. Escreva um programa que receba um número inteiro positivo do usuário e verifique se ele é primo.
+#16. Escreva um programa que receba um número inteiro positivo do usuário e verifique se ele é primo.
 
 n = int(input('Digite um número inteiro e positivo: '))
 
