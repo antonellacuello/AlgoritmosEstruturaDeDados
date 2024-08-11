@@ -50,17 +50,17 @@ sorteado = random.randint(0,10)*
 - **Exercício 27:**
   - *    Faça um programa em python que desenhe uma pirâmide conforme 2 dados informados pelo usuário. O primeiro dado indica o "tijolo" e o segundo a quantidade de andares.*
 
-Ex:         Informe o tijolo: A
+        Ex:          Informe o tijolo: A
 
         Informe a quantidade de andares: 5
 
-        A
+             A
 
-       AAA
+            AAA
 
-      AAAAA
+           AAAAA
 
-     AAAAAAA
+          AAAAAAA
 
-    AAAAAAAAA
+         AAAAAAAAA
 
