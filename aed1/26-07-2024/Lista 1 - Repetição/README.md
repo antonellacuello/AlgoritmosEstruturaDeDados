@@ -48,7 +48,7 @@ sorteado = random.randint(0,10)*
 - **Exercício 26:**
   - *Construa um programa em Python que escreva uma contagem de 10 (dez) minutos, ou seja, mostre 0:00, e então 0:01, 0:02, ..., 0:58, 0:59, 1:00, 1:01,  ..., até 10:00.*
 - **Exercício 27:**
-  - *    Faça um programa em python que desenhe uma pirâmide conforme 2 dados informados pelo usuário. O primeiro dado indica o "tijolo" e o segundo a quantidade de andares.*
+  - *Faça um programa em python que desenhe uma pirâmide conforme 2 dados informados pelo usuário. O primeiro dado indica o "tijolo" e o segundo a quantidade de andares.*
 
         Ex:          Informe o tijolo: A
 
