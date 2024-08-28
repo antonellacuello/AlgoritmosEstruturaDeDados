@@ -1,6 +1,6 @@
 # AED1 - FURG 
 
-***Exercícios de Aulla:*** - **STRINGS**
+***Exercícios de Aula:*** - **STRINGS**
 - **Exercício 1:**
   - *Leia uma string e escreva letra por letra.*
 - **Exercício 2:**
