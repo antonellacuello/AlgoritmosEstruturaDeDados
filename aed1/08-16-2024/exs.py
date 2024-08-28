@@ -60,34 +60,69 @@ print(misici)
 
 # 3. b) Leia um nome e faça o espelho do nome: Antonella Cuello -> allenotna olleuc, não olleuc allenotna
 
-ns = 'antonella cuello'
+ns = 'antonella manuela cuello'
+tamanho = len(ns)
+espelho = ''
+palavra = ''
 c = 0
-c1 = -1
+
+while c < tamanho:
+    if ns[c] == ' ':
+        espelho += palavra + ' '
+        palavra = ''
+    else:
+        palavra = ns[c] + palavra
+    c += 1
+
+espelho += palavra
+
+print(espelho)
+
+# ns = 'antonella manuela cuello'
+# c = 0
+# c1 = -1
+# espelho = ''
+# nome = ''
+
+# while c < len(ns):
+# 	espelho += ns[c1]
+# 	c += 1
+# 	c1 -= 1
+
+# c = 0
+# nome2 = ''
+# while c < (len(espelho) + 1):
+# 	p = espelho[c -1] 
+# 	nome += p
+# 	if  p == len(espelho):
+# 		print('zz')
+# 		p = ' '
+# 	else: 
+# 		p = espelho[c]
+# 	if p == ' ':
+# 		nome2 = nome + nome2
+# 		nome = ''
+# 	c += 1
+# print(nome2)
+# print(p)
+
+'''ns = 'antonella manuela cuello'
+c = 1
+espelho = ''
+while c <= len(ns): 
+    espelho += ns[-c] 
+    c += 1
+
+c = 0
 nome = ''
-sobrenome = ''
-
-while c < len(ns):
-	p = ns[c]
-	if p == ' ':
-		p1 = p
-	while c < len(ns):
-		if p == p1:
-			while
-	sobrenome += p
-	c += 1
-	
-print(sobrenome)
-	
-
-'''
-while c < len(ns):
-	p = ns[c1]
-	if p != ' ':
-		sobrenome += p
-	else:
-		nome += p
-	c1 -= 1
-	c += 1
-
-print(nome + ' ' + sobrenome)
-'''	
+nome2 = ''
+while c <= len(espelho): 
+    p = ' '
+    if c != len(espelho):
+        p = espelho[c] 
+    nome += p
+    if p == ' ':
+        nome2 = nome + nome2
+        nome = ''
+    c += 1
+print(nome2)'''
