@@ -1,6 +1,6 @@
 # AED1 - FURG 
 
-***Lista 1:*** - **Condicionais**
+***Exercícios de Aulla:*** - **STRINGS**
 - **Exercício 1:**
   - *Leia uma string e escreva letra por letra.*
 - **Exercício 2:**
