@@ -5,7 +5,7 @@ c = 0
 tentativa = input('Digite a senha: ')
 
 while c != 5:
-	c = c + 1
+	c += 1
 	if tentativa != senha:
 		print('Senha incorreta. Tente novamente! \n')
 		tentativa = input('Digite a senha: ')
