@@ -1,6 +1,6 @@
 # AED1 - FURG 
 
-***Introdução:*** - **Semana 02**
+***Introdução:*** **Semana 02**
 - **Exercício 1:**
   - *Leia o nome do usuário e escreva uma mensagem de boas-vindas com seu nome.*
 - **Exercício 2:**
