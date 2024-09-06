@@ -1,4 +1,4 @@
-# joguinho de dica: quando a pessoa errar 2 vezes, uma dica terá que ser printada e assim por diante (mpinimo de 4 dicas).
+#joguinho de dica: quando a pessoa errar 2 vezes, uma dica terá que ser printada e assim por diante (mpinimo de 4 dicas).
 
 '''resposta = 'jungkook'
 c = 2
