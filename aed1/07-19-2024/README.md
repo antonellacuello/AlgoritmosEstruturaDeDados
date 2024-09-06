@@ -1,6 +1,6 @@
 # AED1 - FURG 
 
-***Semana 03*** - **Condicionais**
+***Semana 03:*** **Condicionais**
 - **Exercício 1:**
   - *Leia um número e escreva seu absoluto*
 - **Exercício 2:**
