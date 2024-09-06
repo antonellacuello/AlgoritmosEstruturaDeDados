@@ -1,4 +1,4 @@
-# Leia o ano que nasceu e escreva se o voto é facultativo ou obrigatório.
+# 3. Leia o ano que nasceu e escreva se o voto é facultativo ou obrigatório.
 
 ano_nasc = int(input('Insira o ano de nascimento: '))
 from datetime import date
