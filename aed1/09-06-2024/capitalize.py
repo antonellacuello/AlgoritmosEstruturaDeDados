@@ -47,3 +47,4 @@ for um_nome in ls_nome:  #pega cada nome
 	novo_nome += ' '
 print(novo_nome)
 
+
