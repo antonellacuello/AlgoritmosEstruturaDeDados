@@ -50,7 +50,6 @@ def estadoMaisLongo(lista):
     maior = 'São Paulo'
     for linha in lista[1:]:
         um_estado = linha.split(',')
-        print(len(um_estado[1]))
         if len(um_estado[1]) > len(maior):
             maior = um_estado[1]
     return maior
@@ -59,7 +58,6 @@ def estadoMaisCurto(lista):
     menor = 'São Paulo'
     for linha in lista[1:]:
         um_estado = linha.split(',')
-        print(len(um_estado[1]))
         if len(um_estado[1]) < len(menor):
             menor = um_estado[1]
     return menor
