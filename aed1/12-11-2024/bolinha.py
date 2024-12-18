@@ -35,17 +35,22 @@ onde_cliquei = gf.Point(0, 0)
 
 while i != False:
     cliquei_antes = onde_cliquei
-    if foiNoBotao(botao, onde_cliquei):
-        botao.setFill('red')
-    else:
-        botao.setFill('yellow')
     print(onde_cliquei.getX(), onde_cliquei.getY())
     onde_cliquei = win.getMouse()
+    if foiNoBotao(botao, onde_cliquei):
+        botao.setFill('red')
+        print('dentro do botao')
+    else:
+        botao.setFill('yellow')
+        print('fora')
+    print(onde_cliquei.getX(), onde_cliquei.getY())
+    #onde_cliquei = win.getMouse()
     nova_bolinha = gf.Circle(onde_cliquei, 10)
     cor = rd.randint(0, len(cores) - 1)
     nova_bolinha.setFill(cores[cor])
     nova_bolinha.draw(win)
-    onde_cliquei2 = win.getMouse()
+    onde_cliquei2 = cliquei_antes
+    #onde_cliquei2 = win.getMouse()
     print(onde_cliquei2.getX(), onde_cliquei2.getY())
     dx = abs(onde_cliquei2.getX() - onde_cliquei.getX())
     dy = abs(onde_cliquei2.getY() - onde_cliquei.getY())
