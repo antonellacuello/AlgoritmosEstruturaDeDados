@@ -1,11 +1,11 @@
 MULTIPLICA()
-int op1[4], op2[4], resto[4], aux[2], produto[7];
+int op1[4], op2[4], resto[4], aux[2], produto[8];
 
 write('Informe o primeiro operando: ');
 read(op1);
 write('Informe o segundo operando: ');
 read(op2);
-
+                                             
 a = 0;
 pp = -1;
 shift = -1
