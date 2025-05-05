@@ -1,0 +1,13 @@
+selection-sort(A)
+n <- length[A];
+for j <- 1 to n - 1 do
+    smallest <- j;
+    for i <- j + 1 to n do
+        if A[i] < A[smallest] then
+            smallest <- i;
+        end if;
+    end for;
+    temporary <- A[j];
+    A[smallest] <- temporary;
+end for;
+end procedure;
