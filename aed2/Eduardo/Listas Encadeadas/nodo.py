@@ -62,6 +62,23 @@ class ListaEnc:
                     return var.valor
     #def verificaValor(self, valor):
     
+    def remover(self, posicao):
+        if (posicao + 1 <= self.tamanho and posicao >= 0):
+            if posicao == 0:
+                if self.tamanho == 1:
+                    self.fim =  None
+                self.inicio = self.inicio.proximo
+                else:
+                    aux = self.inicio
+                    for i in range(posicao - 1):
+                        aux = aux.proximo
+                    aux.proximo = aux.proximo.proximo
+                if posicao == self.tamanho:
+                    self.fim = aux
+                self.tamanho -= 1
+                return true
+        else:
+            return false
 
 
 lista = ListaEnc()
@@ -73,3 +90,6 @@ lista.inserir(2, 'E')
 lista.imprimir()
 print('-----------')
 print(lista.verificaPosicao(0))
+print('------------')
+lista.remover('A')
+print(lista)
