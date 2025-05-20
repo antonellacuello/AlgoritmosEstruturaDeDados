@@ -28,20 +28,16 @@ class Pilha:
         while not self.Vazia():
             self.Excluir()
     
-    def Inverter(pilha):
+    def Inverter(self):
         invertida = Pilha()
-        
-        while not pilha.Vazia():
-            dado = pilha.Consultar()
-            invertida.Empilhar(dado)
-            pilha.Excluir()
 
-        while not invertida.Vazia():
-            dado = invertida.Consultar()
-            pilha.Empilhar(dado)
-            invertida.Excluir()
+        while not self.Vazia():
+            dado = self.Consultar()
+            invertida.Empilhar(dado)
+            self.Excluir()
 
         return invertida
+
 
     def TesteIgualdade(p1, p2):
         atual1 = p1.topo
@@ -69,29 +65,38 @@ class Pilha:
 
         return menor
 
+    def Printar(self):
+        aux = Pilha()
+
+        if self.Vazia():
+            print("Pilha vazia.")
+            return
+
+        elementos = []
+        while not self.Vazia():
+            dado = self.Consultar()
+            elementos.append(str(dado)) # Coleta os elementos para imprimir
+            aux.Empilhar(dado)
+            self.Excluir()
+        
+        # Imprime os elementos na ordem correta (topo para base)
+        print(" -> ".join(elementos))
+
+        while not aux.Vazia():
+            self.Empilhar(aux.Consultar())
+            aux.Excluir()
+
+# ========== TESTES ==========
+
 print("== Teste de Inversão ==")
 p = Pilha()
-p.Empilhar(1)
-p.Empilhar(2)
 p.Empilhar(3)
+p.Empilhar(2)
+p.Empilhar(1)
 
-p.Inverter()
+print("Pilha antes da inversão (do topo para a base):")
+p.Printar() # Saída: 1 -> 2 -> 3
 
-while not p.Vazia():
-    print(p.Consultar())
-    p.Excluir()
-
-print("\n== Teste de Igualdade ==")
-p1 = Pilha()
-p2 = Pilha()
-for valor in [3, 2, 1]:
-    p1.Empilhar(valor)
-    p2.Empilhar(valor)
-
-print(Pilha.TesteIgualdade(p1, p2)) 
-
-p2.Excluir()
-print(Pilha.TesteIgualdade(p1, p2))
-
-print("\n== Teste de Menor Elemento ==")
-print(p1.MenorElemento())
+p.Inverter() # A pilha 'p' é invertida no lugar
+print("\nPilha após a inversão (do topo para a base):")
+p.Printar() # Saída: 3 -> 2 -> 1

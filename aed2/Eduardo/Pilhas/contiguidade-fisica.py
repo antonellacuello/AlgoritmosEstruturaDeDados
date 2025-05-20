@@ -22,7 +22,6 @@ class Pilha:
     def Destruir(self):
         self.topo = self.base - 1
 
-    @staticmethod
     def Inverter(pilha):
         invertida = Pilha(pilha.lim + 1)
         while pilha.topo >= pilha.base:
@@ -30,7 +29,6 @@ class Pilha:
             pilha.Excluir()
         return invertida
     
-    @staticmethod
     def TesteIgualdade(p1, p2):
         if p1.topo != p2.topo:
             return False

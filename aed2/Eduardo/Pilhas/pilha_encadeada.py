@@ -27,3 +27,21 @@ class Pilha:
     def Destruir(self):
         while(not self.vazia()):
             self.Excluir
+
+
+
+
+print("\n== Teste de Igualdade ==")
+p1 = Pilha()
+p2 = Pilha()
+for valor in [3, 2, 1]:
+    p1.Empilhar(valor)
+    p2.Empilhar(valor)
+
+print(Pilha.TesteIgualdade(p1, p2)) 
+
+p2.Excluir()
+print(Pilha.TesteIgualdade(p1, p2))
+
+print("\n== Teste de Menor Elemento ==")
+print(p1.MenorElemento())
