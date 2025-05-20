@@ -64,28 +64,7 @@ class Pilha:
             atual = atual.prox
 
         return menor
-
-    def Printar(self):
-        aux = Pilha()
-
-        if self.Vazia():
-            print("Pilha vazia.")
-            return
-
-        elementos = []
-        while not self.Vazia():
-            dado = self.Consultar()
-            elementos.append(str(dado)) 
-            aux.Empilhar(dado)
-            self.Excluir()
         
-        # Imprime os elementos na ordem correta (topo para base)
-        print(" -> ".join(elementos))
-
-        while not aux.Vazia():
-            self.Empilhar(aux.Consultar())
-            aux.Excluir()
-
 # ========== TESTES ==========
 
 print("== Teste de Inversão ==")
@@ -93,15 +72,23 @@ p = Pilha()
 p.Empilhar(3)
 p.Empilhar(2)
 p.Empilhar(1)
-while not p.Vazia():
-    print(p.Consultar())
-    p.Excluir()
-#print("Pilha antes da inversão (do topo para a base):")
-#p.Printar() # Saída: 1 -> 2 -> 3
 
-inv = p.Inverter() # A pilha 'p' é invertida no lugar
+inv = p.Inverter()
 while not inv.Vazia():
     print(inv.Consultar())
     inv.Excluir()
-#print("\nPilha após a inversão (do topo para a base):")
-#p.Printar() # Saída: 3 -> 2 -> 1
+
+print("\n== Teste de Igualdade ==")
+p1 = Pilha()
+p2 = Pilha()
+for valor in [3, 2, 1]:
+    p1.Empilhar(valor)
+    p2.Empilhar(valor)
+
+print(Pilha.TesteIgualdade(p1, p2)) 
+
+p2.Excluir()
+print(Pilha.TesteIgualdade(p1, p2))
+
+print("\n== Teste de Menor Elemento ==")
+print(p1.MenorElemento())

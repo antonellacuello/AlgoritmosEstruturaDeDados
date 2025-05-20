@@ -72,17 +72,7 @@ class Pilha:
 
 # ========== TESTES ==========
 
-print("== Teste de Inserção ==")
-pilha = Pilha(10)
-pilha.Inserir(5)
-pilha.Inserir(10)
-pilha.Inserir(3)
-print("Limite:", pilha.lim)
-print("Base:", pilha.base)
-print("Valor Topo:", pilha.Consultar())
-print("Topo:", pilha.topo)
-
-print("\n== Teste de Inversão ==")
+print("== Teste de Inversão ==")
 pilha = Pilha(10)
 pilha.Inserir(5)
 pilha.Inserir(10)
@@ -93,10 +83,38 @@ print("Base:", invertida.base)
 print("Valor Topo:", invertida.Consultar())
 print("Topo:", invertida.topo)
 
-print("\n== Teste de Destruição ==")
-pilha.Destruir()
-print("Valor Topo após destruir:", pilha.Consultar())
-print("Topo após destruir:", pilha.topo)
+print("\n== Teste de Igualdade ==")
+
+p1 = Pilha(5)
+p2 = Pilha(5)
+
+p1.Inserir(1)
+p1.Inserir(2)
+p1.Inserir(3)
+
+p2.Inserir(1)
+p2.Inserir(2)
+p2.Inserir(3)
+
+resultado = Pilha.TesteIgualdade(p1, p2)
+print("As pilhas são iguais?", resultado)
+
+print("\n== Teste de Igualdade com Pilhas Diferentes ==")
+
+p3 = Pilha(5)
+p4 = Pilha(5)
+
+p3.Inserir(1)
+p3.Inserir(2)
+p3.Inserir(3)
+
+p4.Inserir(1)
+p4.Inserir(2)
+p4.Inserir(4)
+
+resultado2 = Pilha.TesteIgualdade(p3, p4)
+print("As pilhas são iguais?", resultado2)
+
 
 print("\n== Teste de Menor Elemento ==")
 pilha = Pilha(10)
