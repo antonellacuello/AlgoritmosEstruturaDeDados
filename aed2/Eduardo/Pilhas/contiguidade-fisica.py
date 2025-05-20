@@ -17,17 +17,20 @@ class Pilha:
     def Consultar(self):
         if self.topo >= self.base:
             return self.vetor[self.topo]
+        return None
         
     def Destruir(self):
         self.topo = self.base - 1
 
+    @staticmethod
     def Inverter(pilha):
         invertida = Pilha(pilha.lim + 1)
         while pilha.topo >= pilha.base:
-            invertida.Inserir(pilha.Consulta())
+            invertida.Inserir(pilha.Consultar())
             pilha.Excluir()
         return invertida
     
+    @staticmethod
     def TesteIgualdade(p1, p2):
         if p1.topo != p2.topo:
             return False
@@ -55,23 +58,52 @@ class Pilha:
         while aux2.topo >= aux2.base:
             p2.Inserir(aux2.Consultar())
             aux2.Excluir()
+        
+        return iguais
 
-    #def menorElemento():
+    def menorElemento(self):
+        if self.topo < self.base:
+            return None
+        
+        menor = self.vetor[self.base]
+        for i in range(self.base, self.topo + 1):
+            if self.vetor[i] is not None and self.vetor[i] < menor:
+                menor = self.vetor[i]
+        return menor
 
+
+# ========== TESTES ==========
+
+print("== Teste de Inserção ==")
 pilha = Pilha(10)
-
 pilha.Inserir(5)
 pilha.Inserir(10)
 pilha.Inserir(3)
+print("Limite:", pilha.lim)
+print("Base:", pilha.base)
+print("Valor Topo:", pilha.Consultar())
+print("Topo:", pilha.topo)
 
-print("Limite: ", pilha.lim)
-print("Base: ", pilha.base)
-print("Valor Topo: ", pilha.Consultar())
-print("Topo: ", pilha.topo)
+print("\n== Teste de Inversão ==")
+pilha = Pilha(10)
+pilha.Inserir(5)
+pilha.Inserir(10)
+pilha.Inserir(3)
+invertida = Pilha.Inverter(pilha)
+print("Limite:", invertida.lim)
+print("Base:", invertida.base)
+print("Valor Topo:", invertida.Consultar())
+print("Topo:", invertida.topo)
 
-pilha.Inverter()
+print("\n== Teste de Destruição ==")
+pilha.Destruir()
+print("Valor Topo após destruir:", pilha.Consultar())
+print("Topo após destruir:", pilha.topo)
 
-print("Limite: ", pilha.lim)
-print("Base: ", pilha.base)
-print("Valor Topo: ", pilha.Consultar())
-print("Topo: ", pilha.topo)
+print("\n== Teste de Menor Elemento ==")
+pilha = Pilha(10)
+pilha.Inserir(8)
+pilha.Inserir(2)
+pilha.Inserir(10)
+pilha.Inserir(1)
+print("Menor elemento:", pilha.menorElemento())
