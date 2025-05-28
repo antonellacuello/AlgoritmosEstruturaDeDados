@@ -1,0 +1,47 @@
+Insertion-Sort(A)
+for j <- 2 to length[A]
+	do key <- A[j]
+		# insert A[j] into the sorted sequence A[1... j - 1]
+		i <- j - 1
+		while i > 0 and A[i] > key
+			do A[i + 1] <- A[i]
+				i <- i - 1
+		A[i + 1] <- key
+		
+		
+CUSTO       |       ITERAÇÃO
+c1          |       (n - 2 + 1) + 1 = n
+c2          |       n - 1
+c3 = 0      |       n - 1
+c4          |       n - 1
+c5          |       n sum j = 2, tj
+c6          |       n sum j = 2, tj - 1
+c7          |       n sum j = 2, tj - 1
+c8          |       n - 1
+
+TEMPO DE EXECUÇÃO: T(n) = c1n + c2(n - 1) + c4(n - 1) + c5 n sum j = 2, tj - c6 n sum j = 2, (tj - 1) + c7 n sum j = 2, (tj - 1) + c8(n - 1)
+
+MELHOR CASO (vetor de entrada ordenado; A[i] > key sempre falso)
+linha 5
+j = 2; t2(n de vezes q a linha 5 vai ser executada quando o j for 2) = 1
+j = 3; t3 = 1
+j = 4; t4 = 1
+     .                                                               == n - 2
+     .                     t2 + t3 + t4 + ... + tn = n sum j = 2, tj == (1 + 1)(n - 1) / 2
+     .
+j = n; tn = 1
+
+linhas 5 e 6
+j = 2; t2 - 1 = 0
+
+PIOR CASO
+linha 5
+j = 2; i = 1, i = 0 -> t2 = 2
+j = 2; i = 2, i = 1, i = 0 -> t3 = 3
+j = 2; i = 3, i = 2, i = 1, i = 0 -> t4 = 4
+  .
+  .
+  .
+j = n; i = n - 1, i = n - 2, ..., i = 0 -> tn = n
+
+t2 + t3 + t4 + ... + tn = (n sum j = 2, tj) = (n sum j = 2, j) = (2 + n)(n - 1) / 2 = n^2 + n - 2 / 2

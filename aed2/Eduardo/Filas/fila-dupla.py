@@ -1,0 +1,1 @@
+é isso, não irei entrar em muitos detalhes.
