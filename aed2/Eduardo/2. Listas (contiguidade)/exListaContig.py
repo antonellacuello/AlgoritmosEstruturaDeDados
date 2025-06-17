@@ -16,8 +16,8 @@ if (lista.Inserir(1,carroA)) :
     print(lista)
 if (lista.Inserir(1,carroB)) :
     print(lista)
-if (lista.Inserir(1,carroC)) :
+if (lista.Inserir(5,carroC)) :
     print(lista)
 
-meuCarro = lista.Consultar(5)
+meuCarro = lista.Posicao(1)
 print(meuCarro)
