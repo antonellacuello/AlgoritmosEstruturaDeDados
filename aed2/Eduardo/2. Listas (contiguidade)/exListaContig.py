@@ -1,5 +1,5 @@
 from carro import *
-from listaContig import *
+from ListaCont import *
 
 carroA = Carro('AAA123', 2020)
 carroB = Carro('BBB456', 2009)
@@ -19,5 +19,5 @@ if (lista.Inserir(1,carroB)) :
 if (lista.Inserir(5,carroC)) :
     print(lista)
 
-meuCarro = lista.Posicao(1)
+meuCarro = lista.Consultar(1)
 print(meuCarro)

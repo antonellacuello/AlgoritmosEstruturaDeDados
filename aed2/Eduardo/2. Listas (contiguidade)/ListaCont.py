@@ -92,3 +92,29 @@ class Lista:
             return True
         else:
             return False
+
+    def RemoverOtimizado(self, posicao):
+        if self.Vazia() or posicao <= 0 or posicao > self.Tamanho():
+            return False
+
+        indice = self.ini + posicao - 1
+
+        if self.Tamanho() == 1:
+            self.ini = -1
+            self.fim = -1
+            return True
+
+        meio = self.Tamanho() // 2
+
+        if posicao <= meio:
+            # Deslocar para a direita (da esquerda para o centro)
+            for i in range(indice, self.ini, -1):
+                self.vetor[i] = self.vetor[i - 1]
+            self.ini += 1
+        else:
+            # Deslocar para a esquerda (do centro para o fim)
+            for i in range(indice, self.fim):
+                self.vetor[i] = self.vetor[i + 1]
+            self.fim -= 1
+
+        return True

@@ -2,8 +2,8 @@ class Lista:
     def __init__ (self,max):  #inicia os atributos da classe (constructor - aloca espaço na memória p o obj) (self - é da classe)
         self.max = max         #var interna tem self na frente, pois é atributo da classe
         self.vetor = [None] * self.max   #todos os espaços começam como none 
-        self.ini = None        #-1
-        self.fim = None        #-1
+        self.ini = -1
+        self.fim = -1
     
     def __repr__ (self):
         string = '[ini '
@@ -12,7 +12,7 @@ class Lista:
         return string + ']'
 
     def Vazia (self):
-        return self.ini == None or self.fim == None   #troquei o -1   
+        return self.ini == -1 or self.fim == -1   
     
     def Tamanho (self):
         if self.Vazia():
