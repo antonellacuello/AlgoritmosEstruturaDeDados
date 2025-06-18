@@ -7,14 +7,18 @@ class Fila:
         self.ls = tamanho - 1
         self.ini = self.li - 1
         self.fim = self.ls + 1
+
     def vazia(self):
         return self.ini < self.li and self.fim > self.ls
+    
     def cheia(self):
         return (self.ini == self.li and self.fim == self.ls) or self.fim == self.ini - 1
+    
     def destruir(self):
         self.ini = self.li - 1
         self.fim = self.ls + 1
         return 'Fila destruída!'
+    
     def inserir(self, dado):
         if self.vazia():
             self.ini = self.li
@@ -29,6 +33,7 @@ class Fila:
         else:
             return 'Fila cheia!'
         return 'Dado inserido com sucesso!'
+    
     def excluir(self):
         # if self.vazia():
         #     return 'Fila vazia!'
@@ -52,6 +57,7 @@ class Fila:
                 self.ini += 1
             return 'Dado removido: ' + str(dado)
         return 'Fila vazia! Não há dados para serem excluídos.'
+    
     def consultar(self):
         if not self.vazia():
             return 'Dado no início da fila: ' + str(self.vetor[self.ini])
