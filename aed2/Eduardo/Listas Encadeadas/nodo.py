@@ -68,17 +68,17 @@ class ListaEnc:
                 if self.tamanho == 1:
                     self.fim =  None
                 self.inicio = self.inicio.proximo
-                else:
-                    aux = self.inicio
-                    for i in range(posicao - 1):
-                        aux = aux.proximo
-                    aux.proximo = aux.proximo.proximo
-                if posicao == self.tamanho:
-                    self.fim = aux
-                self.tamanho -= 1
-                return true
+            else:
+                aux = self.inicio
+                for i in range(posicao - 1):
+                    aux = aux.proximo
+                aux.proximo = aux.proximo.proximo
+            if posicao == self.tamanho:
+                self.fim = aux
+            self.tamanho -= 1
+            return True
         else:
-            return false
+            return False
 
 
 lista = ListaEnc()
