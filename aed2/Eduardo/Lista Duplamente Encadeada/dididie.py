@@ -71,3 +71,18 @@ class ListaDuplamenteEncadeada:
             print(atual.dado, end=" <-> ")
             atual = atual.proximo
         print("None")
+
+lista = ListaDuplamenteEncadeada()
+lista.inserir_fim(10)
+lista.inserir_fim(20)
+lista.inserir_fim(40)
+
+print("Antes da inserção:")
+lista.exibir()
+
+lista.inserir_posicao(2, 30)  # Insere 30 na posição 2 (entre 20 e 40)
+lista.inserir_posicao(0, 5)   # Insere 5 no início
+lista.inserir_posicao(10, 50) # Insere 50 no fim, pois 10 é maior que o tamanho atual
+
+print("Depois das inserções:")
+lista.exibir()
