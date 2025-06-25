@@ -3,7 +3,7 @@ class Nodo:
         self.info = info
         self.prox = None
     def __repr__(self):
-        return str(self.info) + " --> " + str(self.prox)
+        return str(self.info) + " | " + str(self.prox)
 
 class FilaEnc:
     def __init__(self):
